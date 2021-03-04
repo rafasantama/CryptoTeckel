@@ -1,0 +1,388 @@
+body{
+    background-color: ffffb3;;
+    margin: 0px;
+    padding: 0px;
+}
+.dog{
+    transition: 1000ms linear;
+    background-color: #fdb44e;
+    transition: 1000ms linear;
+    height: 60px;
+    width: 120px;
+    position: relative;
+    top: 650px;
+    left: 35%;
+    border-radius: 0px 0px 0px 110px;
+}
+.body{
+    transition: 1000ms linear;
+    background-color: #fdb44e;
+    transition: 1000ms linear;
+    height: 70px;
+    width: 230px;
+    position: relative;
+    top:55px;
+    left: 70px;
+    border-radius: 0px 0px 60px 40px;
+}
+.leg1, .leg2, .leg3, .leg4{
+    transition: 1000ms linear;
+    background-color: #fdb44e;
+    transition: 1000ms linear;
+    height: 50px;
+    width: 18px;
+    position: relative;
+}
+.leg1{
+    left: 90px;
+    top: 48px;
+}
+.leg2{
+    left: 120px;
+    bottom: 2px;
+}
+.leg3{
+    left: 215px;
+    bottom: 50px;
+    background-color: rgba(151,89,2,0.5);
+    transition: 1000ms linear;
+    z-index: -1;
+}
+.leg4{
+    left: 245px;
+    bottom: 100px;
+}
+.tail{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 100px solid #fdb44e;
+    position: relative;
+    bottom: 300px;
+    left: 280px;
+    transform: rotate(30deg);
+    transform-origin: bottom;
+    animation: wag 1s infinite;
+}
+
+@keyframes wag{
+    50%{
+        transform: rotate(10deg);
+    }
+}
+
+.ear{
+    background-color: rgb(151,89,2,0.8);
+    transition: 1000ms linear;
+    width: 45px;
+    height: 70px;
+    border-radius: 0px 0px 100px 100px;
+    position: relative;
+    left: 75px;
+    bottom:370px;
+}
+.nose{
+    background-color: black;
+    transition: 1000ms linear;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+    right: 5px;
+    bottom: 450px;
+}
+.eye{
+    background-color: black;
+    transition: 1000ms linear;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 450px;
+    left: 50px;
+    z-index: 2;
+}
+.eye-ball{
+    background-color: white;
+    transition: 1000ms linear;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 680px;
+    left: 49px;
+    z-index: 1;
+}
+.tongue{
+    background-color: tomato;
+    transition: 1000ms linear;
+    height: 20px;
+    width: 8px;
+    border-radius: 10px;
+    position: relative;
+    left: 23px;
+    bottom: 425px;
+    transform: rotate(45deg);
+    z-index: -1;
+    animation: move 1s infinite;
+}
+@keyframes move{
+    50%{
+        transform: translateY(2.5px);
+    }
+}
+.patron1{
+    background-color: rgb(151,89,2,0.8);
+    transition: 1000ms linear;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 330px;
+    left: 85px;
+}
+.patron2{
+    background-color: rgb(151,89,2,0.8);
+    transition: 1000ms linear;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 350px;
+    left: 115px;
+}
+.patron3{
+    background-color: rgb(151,89,2,0.8);
+    transition: 1000ms linear;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 370px;
+    left: 210px;
+}
+.patron4{
+    background-color: rgb(151,89,2,0.8);
+    transition: 1000ms linear;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 390px;
+    left: 240px;
+}
+.face-spot{
+    background-color: rgb(151,89,2,0.8);
+    transition: 1000ms linear;
+    height: 40px;
+    width: 40px;
+    opacity: 0.5;
+    position: relative;
+    bottom: 540px;
+    left: 20px;
+    transform: rotate(-25deg);
+    border-radius: 0px 100px 0px 100px;
+    z-index: 1;
+}
+.spot{
+    background-color: black;
+    transition: 1000ms linear;
+    height: 40px;
+    width: 100px;
+    opacity: 0.8;
+    position: relative;
+    bottom: 550px;
+    left: 140px;
+    border-radius: 0px 0px 120px 120px;
+    z-index: 1;
+}
+.spot-chest{
+    background-color: rgb(151,89,2,0.8);
+    transition: 1000ms linear;
+    height: 40px;
+    width: 40px;
+    opacity: 0.5;
+    position: relative;
+    bottom: 560px;
+    left: 70px;
+    border-radius: 9px 100px 10px 120px;
+    z-index: 1;
+}
+.spot1{
+    background-color: black;
+    transition: 1000ms linear;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 625px;
+    left: 110px;
+    z-index: 1;
+    opacity: 0.7;
+}
+.spot2{
+    background-color: black;
+    transition: 1000ms linear;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 620px;
+    left: 125px;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.spot3{
+    background-color: black;
+    transition: 1000ms linear;
+    height: 13px;
+    width: 26px;
+    border-top-left-radius:26px;
+    border-top-right-radius:26px;
+    position: relative;
+    bottom: 622px;
+    left: 165px;
+    z-index: 1;
+    opacity: 0.7;
+    display: inline-block;
+    margin: 0 1em 1em 0;
+}
+.spot4{
+    background-color: black;
+    transition: 1000ms linear;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 708px;
+    left: 250px;
+    z-index: 1;
+    opacity: 0.7;
+}
+.spot5{
+    background-color: black;
+    transition: 1000ms linear;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 690px;
+    left: 230px;
+    z-index: 1;
+    opacity: 0.7;
+}
+@keyframes jump {
+    0% {
+      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+    20% {
+      transform: translate3d(0, 100%, 0) scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      transform: translate3d(0, 500%, 0) scale3d(1.05, 0.95, 1);
+    }
+  }
+  .jump {
+    transform-origin: 30% 80%;
+    animation: jump 1s linear alternate infinite;
+  }
+
+  @keyframes jump_leg {
+    0% {
+      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+    20% {
+      transform: translate3d(0, 10%, 0) scale3d(0.95, 2, 1);
+    }
+    100% {
+      transform: translate3d(0, 10%, 0) scale3d(1.05, 0.95, 1);
+    }
+  }
+  .jump_leg {
+    transform-origin: 30% 80%;
+    animation: jump_leg 1s linear alternate infinite;
+  }
+
+  
+  @keyframes jump_patron {
+    0% {
+      transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+    20% {
+      transform: translate3d(0, 50%, 0) scale3d(1, 1.05, 1);
+    }
+    100% {
+      transform: translate3d(0, 50%, 0) scale3d(1.3, 0.95, 1);
+    }
+  }
+  .jump_patron {
+    transform-origin: 30% 80%;
+    animation: jump_patron 1s linear alternate infinite;
+  }
+  .floor{
+      background-color: green;
+      transition: 1000ms linear;
+      position: relative;
+      top: 1060px;
+      width: 1000px;
+      height: 100px;
+    }
+
+    /* For demo: */
+.salchi-data {
+    text-align: center;
+    bottom: 200px;
+    position: relative;
+  }
+.salchi-data * {
+    margin: 2em 2em 0;
+    text-align: center;
+    vertical-align: middle;
+    font-family: sans-serif, sans;
+    font-weight: bold;
+  }
+  .obstacle{
+    background-color: green;
+    transition: 1000ms linear;
+    position: relative;
+    top: 860px;
+    width: 100px;
+  }
+  .obstacle-pole{
+    background-color: grey;
+    transition: 1000ms linear;
+    position: relative;
+    top: 860px;
+    left: 0px;
+    width: 50px;
+    height: 200px;
+
+  }
+
+  @keyframes move_obstacle {
+      
+    0% {opacity: 1 ; left:0px;}
+    80%   {opacity: 1 ; left: 1000px}
+    90%   {opacity: 0; left: 1000px}
+    100%   {opacity: 0 ; left:0px;}
+  }
+  .move_obstacle {
+    animation-fill-mode: forwards;
+    transform-origin: 30% 80%;
+    animation: move_obstacle 1.5s linear infinite;
+  }
+
+  .salchi-frame {
+    width: 960px;
+    position: relative;
+    margin:0 auto;
+    line-height: 1.4em;
+    top: 100px;
+    }
+    
+    /* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */    
+    @media only screen and (max-width: 479px){
+        .salchi-frame { width: 90%; }
+    }

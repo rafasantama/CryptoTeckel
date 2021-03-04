@@ -1,0 +1,223 @@
+.bg{
+    background-color: yellow;
+    height: 100vh;
+    padding: 150px 0;
+  }
+  #dog{
+    width: 250px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .mask {
+    overflow: hidden;
+  }
+  
+  .head{
+    width: 150px;
+    height: 67px;
+    border-radius: 0px 0px 0px 100px;
+    background-color: #B47A52;
+    position: relative;
+    z-index: 2;
+      &::before{
+        content:" ";
+        width: 0;
+        height: 0;
+        border-left: 23px solid transparent;
+        border-right: 23px solid transparent;
+        border-bottom: 67px solid #B47A52;
+        position: absolute;
+        top: 0px;
+        left: 127px;
+    }
+  }
+  
+  .mask-head{
+     overflow: hidden;
+    width: 150px;
+    height: 67px;
+    border-radius: 0px 0px 0px 100px;
+  }
+  
+  .nose{
+    background-color: #FFFFFF;
+    width: 58px;
+    height: 100px;
+    transform: rotate(-17deg);
+    position: relative;
+    top: -10px;
+  /*  opacity: 0;*/
+    
+    &::after{
+      background-color: #2F434E;
+      content:'';
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      position: absolute;
+      top: 0px;
+      left: 7px;
+    }
+  }
+  
+  .eye{
+    width: 10px;
+    height: 10px;
+    background-color: #20201E;
+    border-radius: 50px;
+    position: absolute;
+    top: 15px;
+    left: 77px;
+  }
+  
+  .ear{
+    background-color: #8D4F3A;
+    width: 57px;
+    height: 103px;
+    border-radius: 0 0 50px 50px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .body{
+    width: 81px;
+    height: 200px;
+    position: relative;
+    left: 92px;
+    background-color: #3d484e;
+    z-index: 1;
+    float: left;
+      &::after{
+      background-color: #EF4023;
+      content:'';
+      width: 35px;
+      height: 20px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+    
+  
+  }
+  
+  .mask-body {
+    width: 81px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    
+     &::before{
+      background-color: #242B31;
+      content:'';
+      width: 192px;
+      height: 196px;
+      border-radius: 100%;
+      position: absolute;
+      bottom: -100px;
+      left: 44px;
+    }
+  }
+  
+  
+  .leg{
+    width: 0;
+      height: 0;
+      border-left: 44px solid transparent;
+      border-right: 44px solid transparent;
+      border-bottom: 132px solid #FFFFFF;
+    position: absolute;
+    left: -44px;
+    bottom: 0;
+  }
+  
+  .foot{
+    width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid #FFF;
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+  }
+  
+  .back-body{
+    width: 60px;
+      height: 200px;
+    background-color: #3d484e;
+    position: relative;
+    overflow: hidden;
+    right: 50px;
+    z-index: 1;
+    transform:skewX(15deg);
+     float: right;
+     &::after{
+      background-color: #242B31;
+      content:'';
+      width: 192px;
+      height: 196px;
+      border-radius: 100%;
+      position: absolute;
+      top: 110px;
+      left: -21px;
+      
+    }
+    
+     &::before{
+      background-color: #EF4023;
+      content:'';
+      width: 35px;
+      height: 20px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  }
+  .mask-tail{
+    width: 50px;
+    height: 150px;
+    position: relative;
+    left: 40px;
+    top: 50px;
+    float: right;
+    overflow: hidden;
+        &::before{
+        content:" ";
+        width: 0;
+        height: 0;
+        border-left: 43px solid transparent;
+        border-right: 43px solid transparent;
+        border-bottom: 150px solid #3d484e;
+        position: absolute;
+        bottom: 0px;
+        left: 6px;
+    }
+    
+      &::after{
+        content:" ";
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 14px solid transparent;
+        border-bottom: 36px solid #FFFFFF;
+        position: absolute;
+        top: -2px;
+        left: 38px;
+    }
+  }
+  
+  .shirt{
+    width: 50px;
+    height: 5px;
+    border-radius: 90px 20px 0 40px;
+    background-color: #EF4023;
+    position: absolute;
+    top: -14px;
+    right: 123px;
+    z-index: 0;
+    transform: rotate(-17deg);
+  
+  }
